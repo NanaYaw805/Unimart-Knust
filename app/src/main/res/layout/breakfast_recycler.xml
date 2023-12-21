@@ -1,0 +1,84 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:elevation="3dp"
+    android:background="@drawable/teal_border"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/break_image"
+            android:src="@drawable/breakone"
+            android:layout_marginRight="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banku and Fish"
+            android:id="@+id/breakfast_food_name_view"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintTop_toTopOf="@+id/break_image"
+            app:layout_constraintStart_toEndOf="@+id/break_image"
+            android:textColor="@color/teal"
+            />
+
+        <TextView
+            android:id="@+id/location_breakfast_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unity Hall"
+            app:layout_constraintStart_toStartOf="@+id/breakfast_food_name_view"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast_food_name_view"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/timesbb"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odo Breakfast"
+            app:layout_constraintStart_toStartOf="@+id/breakfast_food_name_view"
+            app:layout_constraintTop_toBottomOf="@+id/location_breakfast_view"
+            android:id="@+id/vendor_id_viewxx"
+            />
+
+        <TextView
+            android:id="@+id/time_available_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8:00am-12:00pm"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/sky"
+            android:textStyle="bold"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+
+</androidx.cardview.widget.CardView>

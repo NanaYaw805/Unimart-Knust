@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomePage">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/constraint">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unimart_home_name"
+                    android:text="Unimart"
+                    android:textColor="@color/teal"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_home_name"
+                    android:text="Order and Eat"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/search_view_home"
+                    app:layout_constraintStart_toStartOf="@+id/unimart_home_name"
+                    app:layout_constraintTop_toBottomOf="@+id/unimart_home_name"/>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_view_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:background="@drawable/search_bg"
+                    app:layout_constraintTop_toBottomOf="@+id/order_home_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:defaultQueryHint="Find Food..."
+                    app:iconifiedByDefault="false"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/constraint_two"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/search_view_home"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/light_green_banner">
+
+                    <ImageView
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/banner_image"
+                        android:src="@drawable/image_banner"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@+id/banner_image"
+                        app:layout_constraintTop_toTopOf="@+id/banner_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:id="@+id/free_delivery_text_home"
+                        android:layout_marginBottom="32dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="Free Delivery"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="@+id/free_delivery_text_home"
+                        app:layout_constraintEnd_toEndOf="@+id/free_delivery_text_home"
+                        app:layout_constraintTop_toBottomOf="@+id/free_delivery_text_home"
+                        android:id="@+id/on_campus_text_home"
+                        android:textColor="@color/gold"
+                        android:textSize="14sp"
+                        android:text="on Knust Campus"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/deep_teal_background"
+                        app:layout_constraintTop_toBottomOf="@+id/on_campus_text_home"
+                        app:layout_constraintStart_toStartOf="@+id/on_campus_text_home"
+                        app:layout_constraintEnd_toEndOf="@+id/on_campus_text_home">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Order Now"
+                            android:textColor="@color/white"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/category_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Categories"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/rec_category"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/unity_hall_old_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Popular Food at Unity Hall"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/rec_unity_hall_new"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/university_hall_text"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Popular Food at University Hall"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/rec_university_hall"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/queens_hall"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Popular Food at Queens Hall"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/rec_queens_hall"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:id="@+id/republic_hall"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Popular Food at Republic Hall"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:id="@+id/rec_republic_hall"
+                />
+
+
+
+    </LinearLayout>
+
+
+
+ 
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:icon="@drawable/nav_home"
+        android:id="@+id/home_bmenu"
+        android:checked="true"
+        />
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/nav_profile"
+        android:id="@+id/profile_bmenu"/>
+
+    <item
+        android:title="Notifications"
+        android:icon="@drawable/nav_notification"
+        android:id="@+id/notification_bmenu"/>
+
+    <item
+        android:title="Settings"
+        android:icon="@drawable/nav_settings"
+        android:id="@+id/settings_bmenu"/>
+
+
+
+
+
+</menu>

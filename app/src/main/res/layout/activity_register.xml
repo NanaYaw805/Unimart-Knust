@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="72dp"
+            android:gravity="center"
+            android:layout_marginStart="24dp"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="124dp"
+                android:layout_height="128dp"
+                android:src="@drawable/logos"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/sign_Email"
+                android:layout_width="350dp"
+                android:layout_height="54dp"
+                android:background="@drawable/sky_border"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:fontFamily="@font/timesbb"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"/>
+
+
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="350dp"
+                android:layout_height="54dp"
+                android:background="@drawable/sky_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:fontFamily="@font/timesbb"
+                android:textSize="12sp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"/>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="350dp"
+                android:layout_height="64dp"
+                android:text="Sign-Up"
+                android:fontFamily="@font/timesbb"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/sky_border"
+                android:backgroundTint="@color/sky"
+
+                />
+
+            <TextView
+                android:id="@+id/already_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a user?Sign-In"
+                android:fontFamily="@font/times"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"/>
+
+
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/simpleProgressBarRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="172dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

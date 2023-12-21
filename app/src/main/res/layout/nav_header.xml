@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:padding="16dp"
+    android:gravity="bottom"
+    android:background="@drawable/deepteal"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="82dp"
+        android:src="@drawable/logos"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arhinyaw64@gmail.com"
+        android:textColor="#F26864"
+        android:textSize="12sp"
+        />
+
+
+
+
+
+</LinearLayout>

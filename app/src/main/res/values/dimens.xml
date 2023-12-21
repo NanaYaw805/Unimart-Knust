@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/dimens.xml -->
+    <dimen name="your_height_in_dp">64dp</dimen>
+
+
+</resources>

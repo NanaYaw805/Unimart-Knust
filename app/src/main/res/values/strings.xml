@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Unimart</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string-array name="locations">
+        <item>Select hall/hostel/location</item>
+        <item>Unity Hall</item>
+        <item>University Hall</item>
+        <item>Queens Hall</item>
+        <item>Republic Hall</item>
+        <item>Independence Hall</item>
+        <item>Hall 7</item>
+        <item>Baby Brunei</item>
+        <item>New Brunei</item>
+        <item>Brunei Complex</item>
+        <item>SRC Hostel</item>
+        <item>Can\'t find my location</item>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">Menu</string>
+    <string name="abouts">Abouts</string>
+    <string name="share">Share</string>
+    <string name="settings">Settings</string>
+    <string name="logout">logout</string>
+    <string name="image_of_the_food_vendor_location">Image of the food vendor location</string>
+    <string name="unimart">Unimart</string>
+    <string name="floating_button">floating button</string>
+    <string name="descriptions">"Enter food details here, we will call you if your price does not match the price of the vendor. e.g. Plantain 5ghc, Beans 4ghc"</string>
+    <string name="_25">25</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="delivery_complete">Delivery Complete</string>
+    <string name="price_ghc">Price: GHc</string>
+    <string name="banku_and_tilapia">Banku and Tilapia</string>
+    <string name="food">Food:</string>
+    <string name="here">here</string>
+    <string name="give_details_of_the_food_items_you_want">Give details of the food items you want</string>
+    <string name="order_now">Order Now</string>
+</resources>
